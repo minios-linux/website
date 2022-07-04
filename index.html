@@ -1,21 +1,10 @@
-
-
-<script>
-
-	//You can use an IIFE (Immediately Invoked Function Expression)
-	(() => {
-        var userLang = navigator.language || navigator.userLanguage;
-		document.getElementById("myText").innerHTML = userLang;
-	})();
-</script>
-<h1>"My number: " <span id="myText"></span></h1>
 <script type="text/javascript">
     
     var userLang = navigator.language || navigator.userLanguage;
     if (userLang == "ru-RU"|| userLang == "ru") {
         window.location.href = "index-ru.html";
     }
-    //else {
-    //    window.location.href = "index-en.html";
-    //};
+    else {
+        window.location.href = "index-en.html";
+    };
 </script>
