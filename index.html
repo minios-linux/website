@@ -4,8 +4,8 @@
 
 	//You can use an IIFE (Immediately Invoked Function Expression)
 	(() => {
-  		var number = "123";
-		document.getElementById("myText").innerHTML = number;
+        var userLang = navigator.language || navigator.userLanguage;
+		document.getElementById("myText").innerHTML = userLang;
 	})();
 </script>
 <!--script type="text/javascript">
