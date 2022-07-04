@@ -1,4 +1,15 @@
-<script type="text/javascript">
+<h1>"My number: " <span id="myText"></span></h1>
+
+<script>
+
+	//You can use an IIFE (Immediately Invoked Function Expression)
+	(() => {
+  		var number = "123";
+		document.getElementById("myText").innerHTML = number;
+	})();
+</script>
+<!--script type="text/javascript">
+    
     var userLang = navigator.language || navigator.userLanguage;
     if (userLang == "ru_RU") {
         window.location.href = "index-ru.html";
@@ -6,4 +17,4 @@
     else {
         window.location.href = "index-en.html";
     };
-</script>
+</script-->
